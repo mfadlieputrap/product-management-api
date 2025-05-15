@@ -13,6 +13,7 @@ public class ProductDTO {
     public ProductDTO(){}
 
     public ProductDTO(Long id, String name, BigDecimal price, Integer stock, String description){
+        this.id = id;
         this.name = name;
         this.price = price;
         this.stock = stock;
@@ -22,6 +23,8 @@ public class ProductDTO {
     public Long getId(){
         return id;
     }
+
+    public void setId(Long id){ this.id = id;}
 
     public String getName(){
         return name;

@@ -27,7 +27,8 @@ public class Product {
 
     public Product (){}
 
-    public Product(String name, BigDecimal price, Integer stock, String description){
+    public Product(Long id, String name, BigDecimal price, Integer stock, String description){
+        this.id = id;
         this.name = name;
         this.price = price;
         this.stock = stock;
@@ -37,6 +38,8 @@ public class Product {
     public Long getId() {
         return id;
     }
+
+    public void setId(Long id) { this.id = id;}
 
     public String getName(){
         return name;
