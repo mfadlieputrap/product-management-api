@@ -12,7 +12,7 @@ public class ProductDTO {
 
     public ProductDTO(){}
 
-    public ProductDTO(String name, BigDecimal price, Integer stock, String description){
+    public ProductDTO(Long id, String name, BigDecimal price, Integer stock, String description){
         this.name = name;
         this.price = price;
         this.stock = stock;
